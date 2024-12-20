@@ -1,5 +1,4 @@
 import Badge from "@/components/Genres/Badge";
-import Image from "next/image";
 const MovieDetail = ({
   backdrop_path,
   poster_path,
@@ -23,7 +22,7 @@ const MovieDetail = ({
         }}
       ></article>
       <article className="max-w-screen-md flex gap-5 absolute top-1/4 left-1/4">
-        <Image alt="" fill className="w-64" src={poster_path} />
+        <img alt="" fill className="w-64" src={poster_path} />
         <div className="flex flex-col gap-5">
           <span className="text-2xl font-semibold">{title}</span>
           <div className="flex gap-3">
